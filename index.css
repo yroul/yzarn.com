@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
+html {font-size:100%}
 a {
   text-decoration: none;
 }
@@ -28,7 +29,8 @@ body .picture-holder {
   color: white;
 }
 body .picture-holder img {
-  width: 100%;
+  max-width: 100%;
+  width : 60rem;
 }
 body .picture-holder .subtitle {
   position: absolute;
@@ -43,7 +45,12 @@ body .picture-holder .subtitle {
 }
 body .social-links-holder {
   text-align: center;
+  margin-top: 2rem;
 }
 body .social-links-holder .social-link .social-icon {
   font-size: 4em;
+}
+
+.social-link {
+  margin-right : 2em;
 }
