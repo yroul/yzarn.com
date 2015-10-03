@@ -1,0 +1,149 @@
+
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+html {
+  font-size: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+body {
+  background-color: black;
+}
+body a {
+  color: white;
+}
+body .picture-holder {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  color: white;
+}
+body .picture-holder img {
+  max-width: 100%;
+  width: 45em;
+}
+body .picture-holder .subtitle {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+body .social-links-holder {
+  text-align: center;
+  margin-top: 2rem;
+}
+body .social-links-holder .social-link .social-icon {
+  font-size: 4em;
+}
+.social-link {
+  margin-right: 2em;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.menu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 70%;
+  font-size: 1.2em;
+}
+.menu li {
+  display: inline;
+  list-style: none;
+  margin-right: 1em;
+}
+.menu li a:hover {
+  color: red;
+  cursor: pointer;
+}
+.logo.animate {
+  top: 2%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  -webkit-animation: logoToUp 2s;
+  -moz-animation: logoToUp 2s;
+  -ms-animation: logoToUp 2s;
+  -o-animation: logoToUp 2s;
+  animation: logoToUp 2s;
+}
+.logo.no-animate {
+  top: 2%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.logo.animate .menu {
+  -webkit-animation: showMenu 5s;
+  -moz-animation: showMenu 5s;
+  -ms-animation: showMenu 5s;
+  -o-animation: showMenu 5s;
+  animation: showMenu 5s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+@keyframes logoToUp {
+  from {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  to {
+    top: 2%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+  }
+}
+@keyframes showMenu {
+  from {
+    display: block;
+    opacity: 0;
+  }
+  60% {
+    display: block;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+

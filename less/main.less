@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+@import "prefixer.less";
+html {
+    font-size:100%
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+body {
+  background-color: black;
+}
+body a {
+  color: white;
+}
+body .picture-holder {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  color: white;
+}
+body .picture-holder img {
+  max-width: 100%;
+  width : 45em;
+}
+body .picture-holder .subtitle {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+body .social-links-holder {
+  text-align: center;
+  margin-top: 2rem;
+}
+body .social-links-holder .social-link .social-icon {
+  font-size: 4em;
+}
+
+.social-link {
+  margin-right : 2em;
+}
+
+// MIXINS
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    .transform(translate(-50%, -50%));
+    
+}
+//----------------------- MIXINS ----------------------
+
+
+@logoTopPosition : 2%;
+.menu{
+   position:absolute;
+   right: 0;
+   left: 0;
+    top : 70%;
+    font-size : 1.2em;
+    li{
+        display: inline;  
+        list-style: none;
+        margin-right: 1em;
+        a:hover{        
+            color:red;
+            cursor: pointer;
+       
+        }
+    }
+    
+}
+
+
+.logo.animate{
+    top : @logoTopPosition;
+    .transform(translate(-50%,0%));
+    .animation(logoToUp 2s);
+
+}
+.logo.no-animate{
+    top : @logoTopPosition;
+    .transform(translate(-50%,0%));
+}
+
+.logo.animate .menu{
+    .animation(showMenu 5s);
+    .animation-delay(0s);
+}
+
+@keyframes logoToUp {
+    from {      
+        top : 50%;
+        .transform(translate(-50%,-50%));
+    }    
+    to {      
+        top : @logoTopPosition;
+         .transform(translate(-50%,0%));      
+    }
+}
+@keyframes showMenu {
+    from {      
+        display : block;
+        opacity : 0;
+    }
+    60%{         
+        display : block;
+        opacity : 0;
+    }
+    to {
+        display : block;
+        opacity : 1;
+    }
+}
+
+
