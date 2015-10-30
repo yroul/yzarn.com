@@ -1,0 +1,5 @@
+Todo : 
+
+EventBus / Whatever i call it for communication inside app
+Add require js optimization support through gruntjs
+Add mocha / chai / sinon testing tool and set them up with gruntjs
