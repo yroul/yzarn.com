@@ -1,0 +1,13 @@
+# html5 pushstate (history) support:
+<ifModule mod_rewrite.c>
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteRule	^music$	index.html#music	[L]	
+RewriteRule     ^tour$ index.html#tour      [L]
+RewriteRule     ^bio$ index.html#bio      [L]
+RewriteRule     ^contact$ index.html#contact      [L]
+#do not work :/
+#RewriteRule     ^/(.*)      index.html#$1       [L,R]
+
+</ifModule>
