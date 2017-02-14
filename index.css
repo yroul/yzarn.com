@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
+
+@font-face {
+    font-family: Metro;
+    src: url("Metro.otf") format("opentype");
+}
 html {font-size:100%}
 a {
   text-decoration: none;
@@ -23,7 +28,7 @@ body a {
   color: white;
 }
 body .picture-holder {
-  font-family: 'Special Elite', cursive;
+  font-family: 'Metro',cursive;;
   position: relative;
   text-align: center;
   color: white;
@@ -42,6 +47,18 @@ body .picture-holder .subtitle {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+body .picture-holder .subtitle-album {
+  position: absolute;
+  display: block;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-size: bigger;
 }
 body .social-links-holder {
   text-align: center;
